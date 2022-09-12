@@ -33,7 +33,7 @@ export function Hero() {
           rel="noreferrer"
         >
           TypeScript
-          <SiTypescript className="group-hover:animate-spin inline mx-1 fill-blue-400 bg-magicpurple-100 align-text-top" />
+          <SiTypescript className="group-hover:animate-spin inline mx-1 fill-blue-400 bg-magicpurple-100" />
         </a>
         &{' '}
         <a
@@ -43,12 +43,12 @@ export function Hero() {
           rel="noreferrer"
         >
           Python
-          <DiPython className="group-hover:animate-spin inline fill-yellow-400 align-text-top" />
+          <DiPython className="group-hover:animate-spin inline fill-yellow-400" />
         </a>
       </p>
       <p className="p-6 text-center text-lg md:text-xl">
         I also work in a kindergarden
-        <FaChild className="hover:animate-spin inline mx-1 align-text-top" />
+        <FaChild className="hover:animate-spin inline mx-1" />
       </p>
 
       <Socials />
