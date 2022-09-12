@@ -11,6 +11,21 @@ module.exports = {
           400: '#251531',
         },
       },
+      animation: {
+        'gradient-text': 'gradient-text 3s ease infinite',
+      },
+      keyframes: {
+        'gradient-text': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+      },
     },
   },
   plugins: [],
