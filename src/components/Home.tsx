@@ -9,13 +9,16 @@ export function Hero() {
   return (
     <div className="flex flex-col items-center mt-12">
       <Image
-        className="rounded-full h-2 w-2"
+        className="rounded-full h-2 w-2 cursor-pointer"
         src={sommeeerlogo}
         alt="sommeeeR logo"
         width={200}
         height={200}
+        onClick={() => {
+          resetSommeeerAnimation();
+        }}
       />
-      <h1 className="text-4xl mt-12 bounceInDown z-50">
+      <h1 className="text-4xl mt-12 bounceInDown z-50" id="heading-sommeeer">
         sommeee
         <span
           className="text-5xl bg-gradient-to-r bg-clip-text text-transparent from-magicpurple-100
@@ -54,4 +57,13 @@ export function Hero() {
       <Socials />
     </div>
   );
+}
+
+function resetSommeeerAnimation() {
+  const h1sommeeer = document.getElementById('heading-sommeeer');
+  if (h1sommeeer) {
+    h1sommeeer.style.animation = 'none';
+    h1sommeeer.offsetHeight;
+    h1sommeeer.style.animation = '';
+  }
 }
